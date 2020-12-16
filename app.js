@@ -75,7 +75,7 @@ const clicked=function(){
 const GetWeather= async function(){
 
 
-    const data= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=c2df8fa3824441b5887154558202611&q=${document.querySelector('.cityname').value}&days=1`).then((r)=>r.json()).catch((err)=>(console.log("Error: ",err)));
+    const data= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c2df8fa3824441b5887154558202611&q=${document.querySelector('.cityname').value}&days=1`).then((r)=>r.json()).catch((err)=>(console.log("Error: ",err)));
 
  
     try{
